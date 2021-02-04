@@ -84,6 +84,6 @@ const getGreeting = () => {
                                       case 7:
                                           return 'YOU CAN DO THIS!';
       }
-  };
+    };
 
   console.log(getGreeting() + ' ' + getQuestion() + ' ' + getObservation());
