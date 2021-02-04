@@ -57,4 +57,33 @@ const getGreeting = () => {
       }
   };
 
-  
+  const getObservation = () => {
+      const randomnumber3 = Math.floor(Math.random() * 8);
+      switch(randomnumber3) {
+          case 0:
+              return 'You smell terrible!';
+              break;
+              case 1:
+                  return 'You are drooling again!';
+                  break;
+                  case 2:
+                      return 'High five, lets GO!';
+                      break;
+                      case 3:
+                          return 'You look tired!';
+                          break;
+                          case 4:
+                              return 'It is very dark in here!';
+                              break;
+                              case 5:
+                                  return 'Talking to family can help!';
+                                  break;
+                                  case 6:
+                                      return 'Stop procrastinating!';
+                                      break;
+                                      case 7:
+                                          return 'YOU CAN DO THIS!';
+      }
+  };
+
+  console.log(getGreeting() + ' ' + getQuestion() + ' ' + getObservation());
